@@ -6,7 +6,7 @@ module.exports = {
         filename: "js/out.js",
         path: path.resolve(__dirname, ".")
     },
-    watch: false,
+    watch: true,
     mode : 'production',
     devtool: "source-map",
     devServer: {

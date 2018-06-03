@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat:400,500,600,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="js/app.js"></script>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="js/out.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -18,24 +18,28 @@
 <header class="page-header">
     <div class="container">
         <h1>prognoza pogody </h1>
+        <div id="czas"></div>
+       <div class="animiationSun">
+           <img src="images_2/slonce.png " class="icon" alt="sun">
+           <img src="images_2/chmura-48.png " class="icon2" alt="sun">
+           <img src="images_2/chmura-96.png " class="icon3" alt="sun">
+       </div>
         <nav class="page-nav">
             <ul class="page-nav-list">
-                <li><a href="">dziś</a></li>
-                <li><a href="">jutro</a></li>
-                <li><a href="">kolejne 14 dni</a></li>
-
+                <li><a id="todayWeather" href="">-na dziś-</a></li>
+                <li><a id="tomorrowWeather" href="">-na jutro-</a></li>
             </ul>
         </nav>
-
     </div>
     <div class="col col-1-3">
+        <p class="day">-na dziś-</p>
         <div class="box">
             <h1>warszawa</h1>
-            <div class="pog">
+            <div class="boxWeather">
                 <span class="line"></span>
-                <span class="temperatura">30</span>
+                <span class="temperature">30</span>
                 <div class="weather-icons">
-                     <img src="images_2/sun3.png"class="iconAll" alt="sun">
+                     <img src="images_2/slonce.png " class="iconAll" alt="sun">
                 </div>
                 <div class="weatherData">
                     <span>ciśnienie</span>
@@ -53,11 +57,11 @@
         </div>
         <div class="box">
             <h1>new york</h1>
-            <div class="pog">
+            <div class="boxWeather">
                 <span class="line"></span>
-                <span class="temperatura">30</span>
+                <span class="temperature">30</span>
                 <div class="weather-icons">
-                    <img src="images_2/sun3.png" class="iconAll" alt="icon-weather">
+                    <img src="images_2/slonce.png " class="iconAll" alt="icon-weather">
                 </div>
                 <div class="weatherData">
                     <span>ciśnienie</span>
@@ -75,12 +79,11 @@
         </div>
         <div class="box">
             <h1>londyn</h1>
-
-            <div class="pog">
+            <div class="boxWeather">
                  <span class="line"></span>
-                <span class="temperatura">30</span>
+                <span class="temperature">30</span>
                 <div class="weather-icons">
-                    <img src="images_2/sun3.png"class="iconAll" alt="icon-weather">
+                    <img src="images_2/slonce.png" class="iconAll" alt="icon-weather">
                 </div>
                 <div class="weatherData">
                 <span>ciśnienie</span>
@@ -110,20 +113,16 @@
             <!--<div class="col-1-2">-->
                 <!--<ul class="social-icons">-->
                     <!--<li>-->
-                        <!--<a class="social social-flickr" href="">Flickr</a>-->
-                        <!--<img src="images/flickr.png" class="flickr" alt=" flickr">-->
+                        <!--<a class="social social-facebook" href="">facebook</a>-->
+                        <!--<img src="images/facebook.png" class="facebook" alt="facebook">-->
                     <!--</li>-->
                     <!--<li>-->
-                        <!--<a class="social social-vimeo" href="">Vimeo</a>-->
-                        <!--<img src="images/vimeo.png" class="vimeo" alt=" vimeo">-->
+                        <!--<a class="social social-google" href="">google</a>-->
+                        <!--<img src="images/icons8-google-plus-24.png" class="google" alt="google">-->
                     <!--</li>-->
                     <!--<li>-->
-                        <!--<a class="social social-pinterest" href="">Pinterest</a>-->
-                        <!--<img src="images/pinterest.png" class="pinterest" alt=" pinterest">-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a class="social social-twitter" href="">Twitter</a>-->
-                        <!--<img src="images/twitter.png" class="twitter" alt=" twitter">-->
+                        <!--<a class="social social-tumblr" href="">tumblr</a>-->
+                        <!--<img src="images/tumblr-48.png" class="tumblr" alt="tumblr">-->
                     <!--</li>-->
                 <!--</ul>-->
 
