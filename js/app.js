@@ -31,7 +31,7 @@ $(()=> {
        if (inputParam !== ""){
            getCustomCityWeather(inputParam);
        } else {
-           $('.searchedBox').css("visibility","hidden");
+           $('.searchedBox').css("display","none");
            $('.day').text('');
            $('.day').text('-na dziś-');
            $('#searchedCityNameHeader').html('...');

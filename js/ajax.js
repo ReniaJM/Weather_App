@@ -174,17 +174,18 @@ function getTomorrowWeather() {
                 key: 'b8ceed1573c329eec18a0dafed246483',
             }
         }).done(function (res) {
-            // console.log(res.list[8].main.temp)
+            console.log(res)
             //todo wstawic pogode na jutro dla miasta z wyszukiwania
 
-            let elementToChange = $(".weatherDataresult_3 span");
-            $(".temperature").eq(2).html((Math.floor(res.list[8].main.temp) + '°'));
+            let elementToChange = $(".weatherDataresult_4 span");
+            $(".temperature").eq(3).html((Math.floor(res.list[8].main.temp) + '°'));
             elementToChange.eq(0).html(res.list[8].main.pressure + ' hPA');
             elementToChange.eq(1).html(res.list[8].main.humidity + ' %');
             elementToChange.eq(2).html(res.list[8].wind.speed + ' km/h');
             elementToChange.eq(3).html(res.list[8].clouds.all + ' %');
             checkForecastTemperature(elementToChange, res);
-            //todo koniec zmian
+
+
         });
     }
 }
@@ -198,9 +199,11 @@ function getCustomCityWeather(cityInSearchField) {
             key: 'b8ceed1573c329eec18a0dafed246483',
         }
     }).done(function (res) {
-        $('.searchedBox').css("visibility","visible");
+        $('.searchedBox').css("display","inline-block");
         $('#searchedCityNameHeader').html(cityInSearchField);
         hideAllDefaultCities();
+
+        console.log(res)
 
          let elementToChange = $(".weatherDataresult_4 span");
          $(".temperature").eq(3).html((Math.floor(res.main.temp) + '°'));
@@ -210,7 +213,7 @@ function getCustomCityWeather(cityInSearchField) {
          elementToChange.eq(3).html(res.clouds.all + ' %');
          checkForecastTemperature(elementToChange, res);
     }).fail(function (res) {
-        $('.searchedBox').css("visibility","hidden");
+        $('.searchedBox').css("display","inline-block");
         alert("Błędna nazwa miasta, nie ma żadnych wyników z serwera!");
     });
 
