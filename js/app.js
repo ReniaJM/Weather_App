@@ -1,9 +1,8 @@
 import {getTodayWeather, getTomorrowWeather, getCustomCityWeather,hideCustomCity} from "./ajax.js";
-import {getTime} from "./time";
+
 
 $(()=> {
     //wywołanie ma na celu eliminację opóźnienia sekundowego
-    $('#czas').html(getTime());
 
     getTodayWeather();
 

@@ -4,151 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>App-Weather</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat:400,500,600,700,900" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <script src="js/out.js"></script>
-    <title>Document</title>
+
 </head>
 <body>
-<header class="page-header">
+    <header class="page-header">
         <h1 class = 'mainheder'>prognoza pogody </h1>
-      <div>
-        <form class = searchform>
-          <label>Szukaj miasto</label>
-          <input class = "name" type="text" placeholder="podaj nazwę">
-          <button id="searchButton" type="submit">szukaj</button>
-        </form>
-      </div>
-        <div id="czas"></div>
-       <div class="animiationSun">
+        <div>
+            <form class = "searchform">
+              <label>Szukaj miasto</label>
+              <input class = "name" type="text" placeholder="podaj nazwę">
+              <button id="searchButton" type="submit">szukaj</button>
+            </form>
+        </div>
+        <div class="animiation_Sun">
            <img src="images_2/slonce.png " class="icon" alt="sun">
            <img src="images_2/chmura-48.png " class="icon2" alt="sun">
            <img src="images_2/chmura-96.png " class="icon3" alt="sun">
-       </div>
+        </div>
         <nav class="page-nav">
             <ul class="page-nav-list">
-                <li><a id="todayWeather" href="">-na dziś-</a></li>
-                <li><a id="tomorrowWeather" href="">-na jutro-</a></li>
+                <li><a id="todayWeather" href="/">-na dziś-</a></li>
+                <li><a id="tomorrowWeather" href="/">-na jutro-</a></li>
             </ul>
         </nav>
-</header>
-<div class="mainbanner">
-    <!--<div class="col-1-3">-->
-        <!--<p class="day">-na dziś-</p>-->
-    <div class="row">
-        <div id="WarsawBox" class="box">
-            <div class="boxWeather">
-                <h1>warszawa</h1>
-                <span class="line"></span>
-                <span class="temperature">30</span>
-                <div class="weather-icons">
-                     <img src="images_2/slonce.png " class="iconAll" alt="sun">
-                </div>
-                <div class="panelWhather">
-                    <div class="weatherData">
-                        <span>ciśnienie</span>
-                        <span>wilgotność</span>
-                        <span>wiatr</span>
-                        <span>zachmurzenie</span>
-                    </div>
-                    <div class="weatherDataresult_1">
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="NewYorkBox" class="box">
-            <div class="boxWeather">
-                <h1>new york</h1>
-                <span class="line"></span>
-                <span class="temperature">30</span>
-                <div class="weather-icons">
-                    <img src="images_2/slonce.png " class="iconAll" alt="icon-weather">
-                </div>
-                <div class="panelWhather">
-                    <div class="weatherData">
-                        <span>ciśnienie</span>
-                        <span>wilgotność</span>
-                        <span>wiatr</span>
-                        <span>zachmurzenie</span>
-                    </div>
-                    <div class="weatherDataresult_2">
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
+    </header>
+
+    <div class="main_banner">
+        <div class="row">
+            <div class="col col-1-3">
+                <div id="WarsawBox" class="box">
+                    <div class="boxWeather">
+                        <h1>warszawa</h1>
+                        <span class="line"></span>
+                        <span class="temperature">30</span>
+                        <div class="weather-icons">
+                             <img src="images_2/slonce.png " class="iconAll" alt="sun">
+                        </div>
+                        <div class="panelWhather">
+                            <div class="weatherData">
+                                <span>ciśnienie</span>
+                                <span>wilgotność</span>
+                                <span>wiatr</span>
+                                <span>zachmurzenie</span>
+                            </div>
+                            <div class="weatherDataresult_1">
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="LondonBox"class="box">
-            <div class="boxWeather">
-                <h1>londyn</h1>
-                <span class="line"></span>
-                <span class="temperature">30</span>
-                <div class="weather-icons">
-                    <img src="images_2/slonce.png" class="iconAll" alt="icon-weather">
-                </div>
-                <div class="panelWhather">
-                    <div class="weatherData">
-                        <span>ciśnienie</span>
-                        <span>wilgotność</span>
-                        <span>wiatr</span>
-                        <span>zachmurzenie</span>
+            <div class="col col-1-3">
+                <div id="NewYorkBox" class="box">
+                    <div class="boxWeather">
+                        <h1>new york</h1>
+                        <span class="line"></span>
+                        <span class="temperature">30</span>
+                        <div class="weather-icons">
+                            <img src="images_2/slonce.png " class="iconAll" alt="icon-weather">
+                        </div>
+                        <div class="panelWhather">
+                            <div class="weatherData">
+                                <span>ciśnienie</span>
+                                <span>wilgotność</span>
+                                <span>wiatr</span>
+                                <span>zachmurzenie</span>
+                            </div>
+                            <div class="weatherDataresult_2">
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="weatherDataresult_3">
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                    </div>
-                </div>
+               </div>
             </div>
-        </div>
-        <div id="CustomCityBox" class="box searchedBox" style="display: none">
-            <div class="boxWeather">
-                <h1 id="searchedCityNameHeader">...</h1>
+           <div class="col col-1-3">
+                <div id="LondonBox"class="box">
+                    <div class="boxWeather">
+                        <h1>londyn</h1>
+                        <span class="line"></span>
+                        <span class="temperature">30</span>
+                        <div class="weather-icons">
+                            <img src="images_2/slonce.png" class="iconAll" alt="icon-weather">
+                        </div>
+                        <div class="panelWhather">
+                            <div class="weatherData">
+                                <span>ciśnienie</span>
+                                <span>wilgotność</span>
+                                <span>wiatr</span>
+                                <span>zachmurzenie</span>
+                            </div>
+                            <div class="weatherDataresult_3">
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                                <span>222</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div id="CustomCityBox" class="box searchedBox" style="display: none">
+                <div class="boxWeather">
+                    <h1 id="searchedCityNameHeader">...</h1>
                     <span class="line"></span>
                     <span class="temperature">30</span>
                     <div class="weather-icons">
                         <img src="images_2/slonce.png" class="iconAll" alt="icon-weather">
                     </div>
-                <div class="panelWhather">
-                    <div class="weatherData">
-                        <span>ciśnienie</span>
-                        <span>wilgotność</span>
-                        <span>wiatr</span>
-                        <span>zachmurzenie</span>
-                    </div>
-                    <div class="weatherDataresult_4">
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
-                        <span>222</span>
+                    <div class="panelWhather">
+                        <div class="weatherData">
+                            <span>ciśnienie</span>
+                            <span>wilgotność</span>
+                            <span>wiatr</span>
+                            <span>zachmurzenie</span>
+                        </div>
+                        <div class="weatherDataresult_4">
+                            <span>222</span>
+                            <span>222</span>
+                            <span>222</span>
+                            <span>222</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <!--</div>-->
-      </div>
-    </div>
-</div>
-<footer class="main-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-1-2">
-                <small class="copyright">
-                    Copyright 2018 | All Rights Reserved. - Prognoza pogody
-                </small>
-            </div>
-
+          </div>
         </div>
     </div>
-</footer>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                    <small class="copyright">
+                        Copyright 2018 | All Rights Reserved. - Prognoza pogody
+                    </small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
