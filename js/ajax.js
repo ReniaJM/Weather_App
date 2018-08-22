@@ -220,9 +220,9 @@ function getCustomCityWeather(cityInSearchField) {
 }
 
 function hideAllDefaultCities() {
-    $('#WarsawBox').css("display","none");
-    $('#NewYorkBox').css("display","none");
-    $('#LondonBox').css("display","none");
+    $('.col-1-3').css("display","none");
+    // $('#NewYorkBox').css("display","none");
+    // $('#LondonBox').css("display","none");
     $('.searchedBox').css("display","block");
 }
 
