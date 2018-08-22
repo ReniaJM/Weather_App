@@ -1,21 +1,21 @@
 function checkForecastTemperature(element, res) {
     if (Math.floor(res.list[8].main.temp) < 25 && (res.list[8].clouds.all) < 40) {
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce_male.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce_male.png")
     } else if (Math.floor(res.list[8].main.temp) > 25 && (res.list[8].clouds.all) < 40 ){
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce.png")
     } else {
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce_chmury.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce_chmury.png")
     };
 };
 
 function checkTodayWeather(element, res) {
     // console.log(res);
     if (Math.floor(res.main.temp) < 25 && (res.clouds.all) < 40) {
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce_male.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce_male.png")
     } else if (Math.floor(res.main.temp) > 25 && (res.clouds.all) < 40 ) {
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce.png")
     }else {
-        element.parent().parent().find(".iconAll").attr("src", "images_2/slonce_chmury.png")
+        element.parent().parent().find(".iconAll").attr("src", "img/slonce_chmury.png")
     };
 };
 
